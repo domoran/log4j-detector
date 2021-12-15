@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.mergebase</groupId>
-    <artifactId>log4j-detector</artifactId>
-    <version>2021.12.15</version>
+    <artifactId>log4j-scan</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <licenses>
         <license>
             <name>GPL-3.0-only</name>
@@ -17,8 +17,8 @@
     <properties>
         <timestamp>${maven.build.timestamp}</timestamp>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.6</maven.compiler.source>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <javassist.version>3.26.0-GA</javassist.version>
         <junit.version>4.13.1</junit.version>
@@ -52,7 +52,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>false</addClasspath>
-                            <mainClass>com.mergebase.log4j.Log4JDetector</mainClass>
+                            <mainClass>com.continental.swx.log4jscan.Log4JScan</mainClass>
                         </manifest>
                     </archive>
                     <descriptors>

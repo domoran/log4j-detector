@@ -38,7 +38,7 @@ class ContainerState {
 	private String location;
 	private String type;
 	private boolean isDirectoryState;
-	private ArrayList<String> foundFiles = new ArrayList<>();  
+	private ArrayList<String> foundFiles = new ArrayList<String>();  
     
     public ContainerState(ContainerState parent, String location, String type) {
 		this.parent = parent; 
